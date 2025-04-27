@@ -1,10 +1,22 @@
- class myclass{
-   fun(){
-    console.log("Hello sir");
-    
-   }
- } 
+ class Student{
+  constructor(name,RollNo)
+  {
+    this.name = name;
+   this.RollNo = RollNo;
 
- let s =  new myclass()
-  let result = s.fun
-   result()
+  }
+   fun(){
+    console.log(`StudentName = ${this.name}, RollNo = ${this.RollNo}`);
+ }
+  static EcoRay(){
+    console.log('EcoRay Institude of Technology');
+  }
+
+} 
+
+let StudentOne = new Student("Osama",1)
+let Studenttow = new Student("Huzaifa",2)
+Student.EcoRay()
+StudentOne.fun()
+Studenttow.fun()
+
