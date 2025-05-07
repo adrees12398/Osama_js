@@ -1,4 +1,4 @@
-const date = new Date();
+// const date = new Date();
 // date.setHours(date.getHours() + 5);
 // console.log(date.toString());
 // console.log(date.toLocaleDateString())
@@ -8,10 +8,25 @@ const date = new Date();
 // const MyTimeStemp =  Date.now()
 // console.log(MyTimeStemp);
 // console.log(Math.floor(Date.now()/1000))
-const MyTimeStemp = new Date()
-console.log(MyTimeStemp.getMonth()+1);
- MyTimeStemp.setHours(MyTimeStemp.getHours() + 5)
-console.log(MyTimeStemp.toString());
+// const MyTimeStemp = new Date()
+// console.log(MyTimeStemp.getMonth()+1);
+//  MyTimeStemp.setHours(MyTimeStemp.getHours() + 5)
+// console.log(MyTimeStemp.toString());
+const date = new Date();
+const options = {
+  timeZone: 'Asia/Karachi',
+  weekday: 'short',
+  year: 'numeric',
+  month: 'short',
+  day: '2-digit',
+  hour: '2-digit',
+  minute: '2-digit',
+  second: '2-digit',
+  hour12: false
+};
+
+console.log(date.toLocaleString('en-PK', options));
+
 
 
 
