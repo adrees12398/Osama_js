@@ -3,16 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chai Aur Osama</title>
 </head>
-<body>
-    <div>
-        <h1 id="title"  class="heading">
-         Chiye aur code
-        </h1>
-        <p>
-            Loream is good boy
-        </p>
-    </div>
+<body style="background-color: #212121;">
+  
+    <!-- <div class="parent" style="color: aliceblue;">
+          <!-- this is comment -->
+        <!-- <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+    </div>  -->
+    <ul style="color: aliceblue;", class="language">
+        <li>JavaScript</li>
+    </ul>
+    
 </body>
+ <script>
+        const parent = document.querySelector('.parent');
+        // console.log(parent);
+        // console.log(parent.children)
+        // console.log(parent.children[1].innerHTML)
+
+        // for (let i = 0; i< parent.children.length; i++) {
+        //   console.log(parent.children[i].innerHTML)
+        // }
+        // parent.children[0].style.color = 'Red'
+        // console.log(parent.firstElementChild);
+        // console.log(parent.lastElementChild);
+       
+        // let dayOne = document.querySelector('.day')
+        // console.log(dayOne);
+        // console.log(dayOne.parentElement);
+        // console.log(dayOne.nextElementSibling);
+
+        // console.log("Nodes :" ,parent.childNodes);
+        
+
+    //    function languagefunction(lang) {
+    //     const li = document.createElement('li')
+    //     li.innerHTML = lang
+    //     document.querySelector('.language').appendChild(li)
+    //    }
+    //    languagefunction("python")
+    //    languagefunction("php")
+    // function addlanguage(lang) {
+    //     const li = document.createElement('li')
+    //     li.innerHTML = lang
+    //     document.querySelector('.language').appendChild(li)
+    // }
+    // addlanguage("python")
+    // addlanguage("php")
+
+    // function addlanguage2(lang){
+    // const li = document.createElement('li')
+    // li.appendChild(document.createTextNode(lang))
+    // document.querySelector('.language').appendChild(li)
+    // }
+    // addlanguage2("goland")
+        
+    function addfunction(lang){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.language').appendChild(li)
+    }
+        addfunction("python")
+        addfunction("java")
+   
+    // Edit
+    // const secondlang = document.querySelector("li:nth-child(2)")
+    // //  secondlang.innerHTML = "ruby"   
+    // const newli = document.createElement('li')
+    // newli.textContent = "Mojo"
+    // secondlang.replaceWith(newli)
+    
+    // const firstlang = document.querySelector('li:first-child')
+    // firstlang.outerHTML = "<li>java</li>"
+
+    // const firstlang  = document.querySelector('li:first-child')
+    // firstlang.innerHTML = "JAVA"
+    // const newli = document.createElement('li')
+    // newli.textContent = "Mogo"
+    // firstlang.replaceWith(newli)
+
+    // const third_lang = document.querySelector('li:nth-child(3)')
+    // third_lang.outerHTML = "<li>Jogo</li>"
+     
+    // // remove 
+    // const removelast = document.querySelector("li:last-child")
+    // removelast.remove()
+
+
+    </script>
 </html>
