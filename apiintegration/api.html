@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="class">
+        <img id="image" src="Screenshot (3).png" alt="" width="100px" height="100px">
+        <h1 id="followers">followers:</h1>
+        <button id="btn">submit</button>
+    </div>
+</body>
+<script>
+   const btn = document.getElementById('btn')
+   btn.addEventListener('click',()=>{
+  const url = 'https://api.github.com/users/hiteshchoudhary'
+   const xhr = new XMLHttpRequest()
+   xhr.open('GET', url)
+   xhr.onreadystatechange = () => {
+   if(xhr.readyState === 4 && xhr.status === 200)
+  {
+    const data = JSON.parse(xhr.responseText)
+    document.getElementById('image').src = data.avatar_url
+    document.getElementById('followers').innerHTML = `followers : ${data.followers}`
+  }
+   }
+   xhr.send() 
+
+
+   });
+
+
+//     const btn = document.getElementById('btn')
+//     btn.addEventListener('click',()=>{
+// const url = 'https://api.github.com/users/hiteshchoudhary'
+//     const xht = new XMLHttpRequest()
+//     xht.open('GET', url)
+//     xht.onreadystatechange = function(){
+//         if (xht.readyState === 4 && xht.status === 200) {
+       
+//          const data = JSON.parse(xht.responseText)  
+//          document.getElementById('image').src  = data.avatar_url 
+//          document.getElementById('followers').innerHTML = `follower:${data.followers}` 
+//         }
+       
+//     }
+//     xht.send()
+//     })
+</script>
+</html>
