@@ -3,11 +3,17 @@ class User{
         this.username = username
     }
     logMe(){
-        console.log(`Username is ${this.username}`);
+      return  console.log(`Username is ${this.username}`);
     }
     static createID(){
         return `123`
     }
 }
-let chai = new User("Osama")
+class Teacher extends User{
+    constructor(username,email){
+        super(username)
+        this.email = email
+    }
+}
+let chai = new Teacher("Osama","123@gmail.com")
 console.log(chai.createID())
